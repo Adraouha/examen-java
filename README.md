@@ -25,7 +25,10 @@ A partir de estas premisas:
 **+EXTRA (2 ptos):** realízalo con **herencia**
 ---
 
-## 📁 Estructura del Proyecto
+
+
+
+## Estructura del Proyecto
 
 ```text
 examen-java/
@@ -40,22 +43,3 @@ examen-java/
     └── BatallaSuperheroes.java     # Clase ejecutable con lógica de combate
 ```
 
-
-### Ejercicio 1: La Ruleta de la Suerte
-- Permite introducir premios continuamente mediante `Scanner`.
-- Los premios se almacenan en un `ArrayList<String>`.
-- El usuario escribe `FIN` para terminar de introducir premios.
-- Realiza una selección aleatoria (`java.util.Random`) entre los premios introducidos.
-- Muestra el mensaje con el conteo de premios y el premio elegido:
-  > *"Has elegido 5 premios, y la ruleta ha seleccionado: otro mes de vacaciones"*
-
-### Ejercicio 2: Batalla de Superhéroes (+EXTRA Herencia 2 ptos)
-- **Herencia aplicada**:
-  - **`Personaje`** (Clase Base): atributos comunes `nombre`, `edad`, `nivelPoder`.
-  - **`Superheroe`** (Subclase): hereda de `Personaje` y añade `ciudadProtegida`.
-  - **`Villano`** (Subclase): hereda de `Personaje` y añade `planMalvado`.
-- Solicita todos los datos de ambos personajes al usuario por consola.
-- Muestra las fichas completas de ambos personajes usando métodos sobrescritos (`@Override mostrarDetalles()`).
-- Compara los `nivelPoder` y determina el ganador con la diferencia de puntos o declara empate si tienen el mismo poder.
-  > Ejemplo de victoria: *"Batman gana a Joker por 125 puntos."*
-  > Ejemplo de empate: *"¡Han empatado! Ambos personajes poseen el mismo nivel de poder (800 puntos)."*
